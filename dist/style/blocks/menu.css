@@ -63,7 +63,7 @@ aside {
   margin: 0 40px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 938px) {
   aside {
     width: 100%;
     min-height: fit-content;
@@ -71,6 +71,8 @@ aside {
 
   .menu__item {
     font-size: 1.3em;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .dropdown-btn {

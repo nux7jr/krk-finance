@@ -28,14 +28,15 @@ header {
 }
 .personal__profile {
   text-decoration: none;
-  color: #8a2be2;
-  margin-top: 35px;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-top: 33px;
 }
 .personal__profile:hover {
-  color: #7308d8;
+  text-shadow: rgba(0, 0, 0, 0.315) 1px 1px;
 }
 .personal__profile:active {
-  color: #a060db;
+  color: #8a2be2;
 }
 .personal__btn {
   height: 45px;

@@ -51,3 +51,8 @@
 .information__btn:hover {
   background-color: #a55ce9;
 }
+@media (max-width: 938px) {
+  .information__table {
+    margin-top: 0;
+  }
+}
