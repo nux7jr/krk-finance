@@ -1,9 +1,8 @@
 header {
   display: flex;
-  position: relative;
+  justify-content: flex-end;
   min-height: 100px;
   background-color: rgba(137, 43, 226, 0.418);
-  justify-content: flex-end;
 }
 
 .header__logo {
@@ -18,7 +17,7 @@ header {
 }
 
 .burgerToggleBtn {
-  display: none;
+  display: block;
   position: absolute;
   left: 0;
   top: 20px;
@@ -38,7 +37,16 @@ header {
 
 .personal__profile {
   text-decoration: none;
+  color: #8a2be2;
   margin-top: 39px;
+}
+
+.personal__profile:hover {
+  color: #7308d8;
+}
+
+.personal__profile:active {
+  color: #a060db;
 }
 
 .personal__btn {
