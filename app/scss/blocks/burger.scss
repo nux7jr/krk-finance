@@ -13,6 +13,7 @@ $secondaryColour: #ffffff00;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  outline: none;
 }
 .menu-btn {
   position: absolute;
@@ -22,6 +23,7 @@ $secondaryColour: #ffffff00;
   background: $secondaryColour;
   margin: 0 auto;
   border: none;
+  outline: none;
   cursor: pointer;
   &:active, &:focus {
     outline: none;
@@ -38,13 +40,13 @@ $secondaryColour: #ffffff00;
     height: 40px;
     transition: all 0.2s;
     opacity: 0;
+    outline: none;
   }
   &__icon {
     position: relative;
-    width: 50px;
-    height: 40px;
     margin: 0 auto;
     cursor: pointer;
+    outline: none;
   }
 }
 

@@ -9,6 +9,7 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  outline: none;
 }
 
 .menu-btn {
@@ -19,6 +20,7 @@
   background: #ffffff00;
   margin: 0 auto;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 .menu-btn:active, .menu-btn:focus {
@@ -36,13 +38,13 @@
   height: 40px;
   transition: all 0.2s;
   opacity: 0;
+  outline: none;
 }
 .menu-btn__icon {
   position: relative;
-  width: 50px;
-  height: 40px;
   margin: 0 auto;
   cursor: pointer;
+  outline: none;
 }
 
 .icon {
