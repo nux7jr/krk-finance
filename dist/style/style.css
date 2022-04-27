@@ -3,7 +3,7 @@
 @import url(blocks/main.css);
 @import url(blocks/menu.css);
 @import url(blocks/news.css);
-@import url(blocks/information.css);
+@import url(blocks/section.css);
 @font-face {
   font-family: "Panton ";
   src: local("Panton  Regular"), local("Panton--Regular"), url("fonts/Panton-Regular.woff2") format("woff2"), url("fonts/Panton-Regular.woff") format("woff"), url("fonts/Panton-Regular.ttf") format("truetype");

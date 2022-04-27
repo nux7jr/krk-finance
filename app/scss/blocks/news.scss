@@ -1,9 +1,13 @@
 .news {
   max-width: 50vw;
-  flex-grow: 2;
+  // flex-grow: 2;
+  flex: 1 2;
   background-color: rgba(250, 235, 215, 0.212);
   padding: 0 5vw;
 }
+// .news--active {
+
+// }
 .search__input {
   margin-top: 20px;
   min-width: 20vw;
@@ -20,4 +24,20 @@
   border: 1px solid #bdbdbd;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.card {
+  position: relative;
+}
+.card__small-text {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  margin: 0;
+}
+
+@media (max-width: 1273px) {
+  .news {
+    flex-grow: 2;
+    max-width: fit-content;
+  }
 }

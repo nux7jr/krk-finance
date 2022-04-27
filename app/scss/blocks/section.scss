@@ -1,0 +1,53 @@
+.section {
+  flex-grow: 1;
+  padding: 0 2vw;
+  background-color: rgba(227, 227, 228, 0.61);
+  min-height: 89vh;
+}
+.wrapper { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.information__table {
+  margin: 10vh auto 0 auto;
+}
+.shoe_size_chart {
+  margin: 0 auto;
+}
+.table__heading {
+  margin: 15px;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+.information__actions {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.information__btn {
+  height: 40px;
+  text-decoration:none; 
+  text-align:center;
+  padding: 0 45px;
+  padding-bottom: 3px; 
+  border:none; 
+  -webkit-border-radius:16px;
+  -moz-border-radius:16px; 
+  border-radius: 16px; 
+
+  font-family: 'Panton ';
+  font-style: bold;
+  font-weight: 800;
+  font-size: 18px;
+  color:#e8d9ec; 
+  background:#747077; 
+  -webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; 
+  -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;  
+  box-shadow:0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;  
+}
+.information__btn:hover {
+  background-color: #a55ce9;
+}
