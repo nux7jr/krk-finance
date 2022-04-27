@@ -52,6 +52,7 @@ aside {
   list-style: none;
   margin: 20px 0;
   padding: 0;
+  font-size: 1.2rem;
 }
 
 .drowdown-menu {
@@ -82,7 +83,7 @@ aside {
   font-family: "Panton ";
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1.2rem;
   background-color: transparent;
 }
 

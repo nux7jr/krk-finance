@@ -18,7 +18,19 @@ const menu = () => {
     });
   };
   showMenu();
+  const closeMenu = () => {
+    const menuInit = document.querySelector(".menu-btn");
 
+    if (menuInit.classList.contains("is--active")) {
+      const closeMenu = document.querySelector(".news");
+      closeMenu.addEventListener("click", () => {
+        menuInit.classList.remove("is--active");
+        menuInit.classList.remove("menu--active");
+        console.log("closing");
+      });
+    }
+  };
+  closeMenu();
   const showDropdownMenu = () => {
     const dropDownMenuBnt = document.querySelector(".dropdown-btn");
     const toggleDropDowpMenu = () => {
