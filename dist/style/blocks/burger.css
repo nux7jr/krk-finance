@@ -13,7 +13,7 @@
 
 .menu-btn {
   position: absolute;
-  top: 28px;
+  top: 23px;
   left: 20px;
   padding: 2px;
   background: #ffffff00;
@@ -28,12 +28,12 @@
   content: "";
   display: block;
   position: absolute;
-  top: 8px;
-  left: 12px;
+  top: 2px;
+  left: 1px;
   background: #000000;
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
+  width: 40px;
+  height: 40px;
   transition: all 0.2s;
   opacity: 0;
 }
@@ -53,7 +53,7 @@
 
 .icon--menu span {
   display: block;
-  width: 50px;
+  width: 33px;
   height: 4px;
   background: #000000;
   transition: all 0.18s;
@@ -61,7 +61,7 @@
   transition-delay: 0.05s;
 }
 .icon--menu span:not(last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .icon--close {
@@ -75,7 +75,7 @@
 .icon--close span {
   position: relative;
   display: block;
-  width: 50px;
+  width: 40px;
   height: 4px;
   background: #000000;
 }

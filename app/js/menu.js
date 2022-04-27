@@ -1,26 +1,24 @@
 const menu = () => {
   const showMenu = () => {
-    const burgerMenuBtn = document.querySelector(".menu-btn");
-
+    const menuBtn = document.querySelector(".menu-btn");
     const toggleMenu = () => {
       const menu = document.querySelector(".menu");
       menu.classList.toggle("menu--active");
     };
-
-    const animation = (burgerMenuBtn) => {
-      burgerMenuBtn.classList.toggle("is--active");
-      burgerMenuBtn.classList.add("is--clicked");
+    const animationMenu = () => {
+      menuBtn.classList.toggle("is--active");
+      menuBtn.classList.add("is--clicked");
       setTimeout(function () {
-        burgerMenuBtn.classList.remove("is--clicked");
+        menuBtn.classList.remove("is--clicked");
       }, 300);
     };
-
-    burgerMenuBtn.addEventListener("click", () => {
+    menuBtn.addEventListener("click", function () {
+      animationMenu();
       toggleMenu();
-      animation();
     });
   };
   showMenu();
+
   const showDropdownMenu = () => {
     const dropDownMenuBnt = document.querySelector(".dropdown-btn");
     const toggleDropDowpMenu = () => {
