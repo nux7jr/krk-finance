@@ -8,8 +8,18 @@ aside {
 .menu {
   display: none;
 }
+@keyframes anim {
+  0% {width: 0px; height: 0px;}
+  17% {width: 17px; height: 17px;}
+  25% {width: 25px; height: 25px;}
+  50% {width: 50px; height: 50px;}
+  65% {width: 65px; height: 65px;}
+  75% {width: 75px; height: 75px;}
+  100% {width: 100px; height: 100px;}
+}
 .menu--active {
   display: block;
+  animation: anim 100ms;
 }
 .menu__list {
   padding: 0;  
