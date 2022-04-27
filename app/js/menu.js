@@ -9,4 +9,3 @@ const menu = () => {
   dropDownMenuBnt.addEventListener("click", toggleDropDowpMenu);
 };
 menu();
-

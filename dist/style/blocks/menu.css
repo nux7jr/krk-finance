@@ -1,0 +1,21 @@
+aside {
+  min-width: 20vw;
+  list-style: none;
+  background-color: rgba(250, 235, 215, 0.452);
+  height: 100vh;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.drowdown-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.drowdown-menu--active {
+  display: block;
+}

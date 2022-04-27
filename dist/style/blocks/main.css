@@ -1,7 +1,4 @@
 .main {
   display: flex;
-}
-
-aside {
-  min-width: 10vw;
+  flex-wrap: wrap;
 }

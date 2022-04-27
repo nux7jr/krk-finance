@@ -11,21 +11,36 @@
 
 <body>
   <header>
-    <h1>krk-finance</h1>
-    <a href=""><img src="" alt="">LOGO</a>
-    <div class="personal-area">
-      <a href=""><img src="" alt="">userLogo</a>
-      <a href="">Профиль</a>
-      <button>Выход</button>
+    <h1 class="visually-hidden">Krk-finance</h1>
+    <button class="header__btn burgerToggleBtn">burgerBnt</button>
+    <a class="header__logo" href="#"><img src="/img/krk_logo.svg" alt="logo"></a>
+    <div class="personal">
+      <a href="#"><img class="personal__logo" src="img/Sample_User_Icon.png" alt="user-logo"></a>
+      <a href="#" class="personal__profile">Профиль</a>
+      <button class="personal__btn">Выход</button>
     </div>
   </header>
   <div class="main">
     <aside class="menu">
       <ul class="menu__list">
-        <li class="menu__item">1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
+        <li class="menu__item"><a href="">Меню 1</a></li>
+        <li class="menu__item"><a href="">Меню 2</a></li>
+        <li class="menu__item"><a href="">Меню 3</a></li>
+        <li class="menu__item"><button class="dropdown-btn">Меню 4(Нажми)</button></li>
+        <ul class="drowdown-menu">
+          <li>
+            <a class="menu__item drowdown-menu__content" href="">dropdown content</a>
+          </li>
+          <li>
+            <a class="menu__item drowdown-menu__content" href="">dropdown content</a>
+          </li>
+          <li>
+            <a class="menu__item drowdown-menu__content" href="">dropdown content</a>
+          </li>
+        </ul>
+        <li class="menu__item"><a href=""><a href="">Меню 5</a></a></li>
+        <li class="menu__item"><a href=""><a href="">Меню 6</a></a></li>
+
       </ul>
     </aside>
     <div class="news">
@@ -49,6 +64,7 @@
         </div>
       </div>
     </div>
+    <hr>
     <div class="information">
       <h2>Заголовок информации</h2>
       <p>Текст 1</p>
@@ -56,8 +72,45 @@
       <p>Текст 2</p>
       <p>Значение 2</p>
       <div class="information__table">
-        <h2>Таблица</h2>
-        <table>Some table</table>
+        <table>
+          <caption>Таблица размеров обуви</caption>
+          <tr>
+            <th>Россия</th>
+            <th>Великобритания</th>
+            <th>Европа</th>
+            <th>Длина ступни, см</th>
+          </tr>
+          <tr>
+            <td>34,5</td>
+            <td>3,5</td>
+            <td>36</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>35,5</td>
+            <td>4</td>
+            <td>36⅔</td>
+            <td>23–23,5</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>4,5</td>
+            <td>37⅓</td>
+            <td>23,5</td>
+          </tr>
+          <tr>
+            <td>36,5</td>
+            <td>5</td>
+            <td>38</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>5,5</td>
+            <td>38⅔</td>
+            <td>24,5</td>
+          </tr>
+        </table>
       </div>
       <div class="information__actions">
         <button>Действие 1</button>
@@ -67,5 +120,6 @@
     </div>
   </div>
 </body>
+<script src="/dist/js/script.js"></script>
 
 </html>

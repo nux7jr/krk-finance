@@ -1,5 +1,66 @@
 header {
   display: flex;
+  position: relative;
+  min-height: 100px;
   background-color: rgba(137, 43, 226, 0.418);
-  justify-content: space-between;
+  justify-content: flex-end;
+}
+
+.header__logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.burgerToggleBtn {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.personal {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.personal__logo {
+  padding-top: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.personal__profile {
+  text-decoration: none;
+  margin-top: 39px;
+}
+
+.personal__btn {
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 34px;
+  padding: 0px 20px;
+  border: none;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  font-family: "Panton ";
+  font-style: bold;
+  font-weight: 800;
+  color: #e8d9ec;
+  background: #8a2be2;
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+.personal__btn:hover {
+  background-color: #9744e6;
 }
