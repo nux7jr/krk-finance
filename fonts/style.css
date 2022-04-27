@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Panton ';
+    src: local('Panton  Regular'), local('Panton--Regular'),
+        url('Panton-Regular.woff2') format('woff2'),
+        url('Panton-Regular.woff') format('woff'),
+        url('Panton-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
