@@ -1,9 +1,12 @@
 .news {
-  min-width: 30vw;
+  max-width: 50vw;
+  flex-grow: 2;
+  background-color: rgba(250, 235, 215, 0.212);
+  padding: 0 5vw;
 }
 
 .search__input {
-  margin: 30px 0 0 30px;
+  margin-top: 20px;
   min-width: 20vw;
   display: block;
   height: calc(2.25rem + 2px);

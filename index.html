@@ -12,7 +12,22 @@
 <body>
   <header>
     <h1 class="visually-hidden">Krk-finance</h1>
-    <button class="header__btn burgerToggleBtn">burgerBnt</button>
+    <div class="burger">
+      <button class="menu-btn" aria-labelledby="sr-only">
+        <span class="sr-only" id="sr-only">Menu</span>
+        <div class="menu-btn__icon" aria-hidden="true">
+          <span class="icon icon--menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="icon icon--close">
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+      </button>
+    </div>
     <a class="header__logo" href="#"><img src="/img/krk_logo.svg" alt="logo"></a>
     <div class="personal">
       <a href="#"><img class="personal__logo" src="img/Sample_User_Icon.png" alt="user-logo"></a>
@@ -28,13 +43,12 @@
         <li class="menu__item"><a href="">Меню 3</a></li>
         <li class="menu__item"><button class="dropdown-btn">Меню 4(Нажми)</button></li>
         <ul class="drowdown-menu">
-          <li class="menu__item drowdown-menu__content"><a href="#">dropdown content</a></li>
-          <li class="menu__item drowdown-menu__content"><a href="#">dropdown content</a></li>
-          <li class="menu__item drowdown-menu__content"><a href="#">dropdown content</a></li>
+          <li class="menu__item drowdown-menu__content"><a href="#">content</a></li>
+          <li class="menu__item drowdown-menu__content"><a href="#">content</a></li>
+          <li class="menu__item drowdown-menu__content"><a href="#">content</a></li>
         </ul>
         <li class="menu__item"><a href=""><a href="">Меню 5</a></a></li>
         <li class="menu__item"><a href=""><a href="">Меню 6</a></a></li>
-
       </ul>
     </aside>
     <div class="news">
@@ -45,22 +59,36 @@
       <div class="news-list">
         <div class="card">
           <h3 class="card__heading">Заголовок</h3>
-          <p class="card__text">Текст 1</p>
+          <p class="card__text">Я в своем познании настолько преисполнился, что я как будто бы уже
+            сто триллионов миллиардов лет проживаю на триллионах и
+            триллионах таких же планет, как эта Земля, мне этот мир абсолютно
+            понятен, и я здесь ищу только одного - покоя, умиротворения и
+            вот этой гармонии, от слияния с бесконечно вечным, от созерцания
+            великого фрактального подобия и от вот этого замечательного всеединства
+            существа</p>
           <p class="card__text">Текст 2</p>
         </div>
         <div class="card">
           <h3 class="card__heading">Заголовок</h3>
-          <p class="card__text">Текст 1</p>
+          <p class="card__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+            сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+            шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой
+            дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и
+            редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам
+            "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За
+            прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые -
+            намеренно (например, юмористические варианты).</p>
           <p class="card__text">Текст 2</p>
         </div>
         <div class="card">
           <h3 class="card__heading">Заголовок</h3>
-          <p class="card__text">Текст 1</p>
+          <p class="card__text">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые
+            модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+            вам нужен Lorem Ipsum для серьёзного проекта,</p>
           <p class="card__text">Текст 2</p>
         </div>
       </div>
     </div>
-    <hr>
     <div class="information">
       <h2>Заголовок информации</h2>
       <p>Текст 1</p>

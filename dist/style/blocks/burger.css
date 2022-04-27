@@ -1,0 +1,88 @@
+.sr-only {
+  display: none;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  padding: 2px;
+  background: #ffffff00;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
+.menu-btn:active, .menu-btn:focus {
+  outline: none;
+}
+.menu-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  background: #000000;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  transition: all 0.2s;
+  opacity: 0;
+}
+.menu-btn__icon {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon--menu span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #000000;
+  transition: all 0.18s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.42, 1.36);
+  transition-delay: 0.05s;
+}
+.icon--menu span:not(last-child) {
+  margin-bottom: 12px;
+}
+
+.icon--close {
+  transform: scale(0);
+  transform-origin: center center;
+  transition: all 0.18s;
+  transition-delay: 0.08s;
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.42, 1.36);
+  opacity: 0;
+}
+.icon--close span {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #000000;
+}
+.icon--close span:nth-of-type(1) {
+  top: 17px;
+  transform: rotate(45deg);
+}
+.icon--close span:nth-of-type(2) {
+  top: 13px;
+  transform: rotate(-45deg);
+}
+
+.is--active .icon--menu span {
+  width: 0;
+}
+.is--active .icon--close {
+  transform: scale(1);
+  opacity: 1;
+}
