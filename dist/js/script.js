@@ -1,8 +1,9 @@
 const menu = () => {
+  const menuBtn = document.querySelector(".menu-btn");
+  const menu = document.querySelector(".menu");
+  const closedArea = document.querySelector(".news");
   const showMenu = () => {
-    const menuBtn = document.querySelector(".menu-btn");
     const toggleMenu = () => {
-      const menu = document.querySelector(".menu");
       menu.classList.toggle("menu--active");
     };
     const animationMenu = () => {
@@ -12,25 +13,23 @@ const menu = () => {
         menuBtn.classList.remove("is--clicked");
       }, 300);
     };
-    menuBtn.addEventListener("click", function () {
+    const closeMenu = () => {
+      menu.classList.remove("menu--active");
+      menuBtn.classList.remove("is--active");
+      menuBtn.classList.remove("is--clicked");
+      setTimeout(function () {
+        menuBtn.classList.remove("is--clicked");
+      }, 300);
+    };
+    closedArea.addEventListener("click", () => {
+      closeMenu();
+    });
+    menuBtn.addEventListener("click", () => {
       animationMenu();
       toggleMenu();
     });
   };
   showMenu();
-  const closeMenu = () => {
-    const menuInit = document.querySelector(".menu-btn");
-
-    if (menuInit.classList.contains("is--active")) {
-      const closeMenu = document.querySelector(".news");
-      closeMenu.addEventListener("click", () => {
-        menuInit.classList.remove("is--active");
-        menuInit.classList.remove("menu--active");
-        console.log("closing");
-      });
-    }
-  };
-  closeMenu();
   const showDropdownMenu = () => {
     const dropDownMenuBnt = document.querySelector(".dropdown-btn");
     const toggleDropDowpMenu = () => {
